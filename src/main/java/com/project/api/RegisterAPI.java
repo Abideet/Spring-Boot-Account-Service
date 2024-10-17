@@ -45,7 +45,7 @@ public class RegisterAPI {
 		return response;
 	}
 
-	public void postNewCustomerToCustomerAPI(String json_string) {
+	void postNewCustomerToCustomerAPI(String json_string) {
 		try {
 
 			URL url = new URL("http://localhost:8080/api/customers");

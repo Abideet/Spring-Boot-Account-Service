@@ -48,7 +48,7 @@ public class TokenAPI {
 
 	}
 
-	private boolean checkPassword(String username, String password) {
+	public boolean checkPassword(String username, String password) {
 		// special case for application user
 		if (username.equals("ApiClientApp") && password.equals("secret")) {
 			return true;
@@ -75,7 +75,7 @@ public class TokenAPI {
 
 	}
 
-	public Token getAppUserToken() {
+	public static Token getAppUserToken() {
 		if (appUserToken == null || appUserToken.getToken() == null || appUserToken.getToken().length() == 0) {
 			appUserToken = createToken("ApiClientApp");
 		}
@@ -102,7 +102,7 @@ public class TokenAPI {
 		return new Token(token_string);
 	}
 
-	private Customer getCustomerByNameFromCustomerAPI(String username) {
+	public Customer getCustomerByNameFromCustomerAPI(String username) {
 		try {
 
 			URL url = new URL("http://localhost:8080/api/customers/byname/" + username);

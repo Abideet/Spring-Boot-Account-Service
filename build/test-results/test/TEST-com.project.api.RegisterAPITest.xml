@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.project.api.RegisterAPITest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-10-17T10:06:54" hostname="DESKTOP-11A41V8" time="0.157">
+  <properties/>
+  <testcase name="testRegisterCustomer_InvalidCustomer()" classname="com.project.api.RegisterAPITest" time="0.157"/>
+  <system-out><![CDATA[11:06:52.897 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.project.api.RegisterAPITest]: RegisterAPITest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:06:53.103 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.project.App for test class com.project.api.RegisterAPITest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.4)
+
+2024-10-17T11:06:53.547+01:00  WARN 17556 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/44784/.gradle/caches/modules-2/files-2.1/org.json/json/20211205/47032dcf2f69880f07dab3dc60b4b0ad97318308/json-20211205.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/44784/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-10-17T11:06:53.562+01:00  INFO 17556 --- [    Test worker] com.project.api.RegisterAPITest          : Starting RegisterAPITest using Java 21.0.4 with PID 17556 (started by 44784 in C:\Users\44784\Documents\AccountService)
+2024-10-17T11:06:53.562+01:00  INFO 17556 --- [    Test worker] com.project.api.RegisterAPITest          : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T11:06:54.779+01:00  INFO 17556 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-10-17T11:06:54.780+01:00  INFO 17556 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-10-17T11:06:54.782+01:00  INFO 17556 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-10-17T11:06:54.815+01:00  INFO 17556 --- [    Test worker] com.project.api.RegisterAPITest          : Started RegisterAPITest in 1.621 seconds (process running for 4.022)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
